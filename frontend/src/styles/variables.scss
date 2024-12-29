@@ -1,0 +1,16 @@
+@use "sass:math";
+
+// Colors
+
+$red: #e74c3c;
+$blue: #3498db;
+$green: #2ecc71;
+$yellow: #f1c40f;
+$wild: #7f8c8d;
+
+$border-radius: 6px;
+
+// Card
+
+$card-width: 100px;
+$card-aspect-ratio: math.div(3, 4); // 3:4 width to height ratio

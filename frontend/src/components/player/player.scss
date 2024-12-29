@@ -1,0 +1,48 @@
+@use '../../styles/variables.scss' as *;
+
+.player {
+  position: relative;
+  top: 300px;
+  width: 300px;
+  // height: 300px;
+  margin: auto;
+
+  color: #f9f9f9;
+
+  border: 1px solid #f1f1f1;
+
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .opponent-card {
+        width: calc(#{$card-width} * var(--card-scale, 1));
+        aspect-ratio: $card-aspect-ratio;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(10px * var(--card-scale, 1));
+        border: 2px solid #000;
+      }
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #7373af;
+    border-radius: 50%;
+  }
+
+  .name {
+    font-size: 32px;
+    display: block;
+
+    margin: 8px 0 0 0;
+    text-align: center;
+  }
+}
